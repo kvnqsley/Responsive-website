@@ -59,6 +59,7 @@ cursor: pointer;
 
 .navbar-item{
     height:80px;
+    position: relative;
 }
 .navbar-links::before{
     content: '';
@@ -69,25 +70,32 @@ cursor: pointer;
     top: 4em;
     transition:all 1s;
 }
-.navbar-item a:hover::before{
-    width: 2em;
-    height: .2em;
+.navbar-item ul a:hover{
+  padding:0 1em;
 }
 .navbar-item ul{
     list-style: none;
-
+    display: none;
 }
 .navbar-item ul li:not(:last-child){
     border-bottom:1px dotted;
 }
 .navbar-item ul li{
-    background-color: #5e8630;
-    background-image: linear-gradient(to top,hsl(95, 29%, 39%) 0%, rgba(125, 206, 43, 0.067) 100%);
-padding:1em;
-
+   background-color: #131313;
+padding:2em;
+cursor: pointer;
 height: 2em;
 }
-{
+
+.navbar-item:hover  .submenu{
+    transform: translateX(0);
+    display: block;
+    transition: all 2s;
+        }
+        .navbar-links:first-child:not(.home):after{
+            display:none ;
+        }
+#extra li:first-child::before{
 content: '';
 position: absolute;
 border:solid;
@@ -97,14 +105,19 @@ border-color: transparent transparent transparent #fff;
 left:0;
 top:.8em ;
 }
-#extra ul{
+#extra{
     position: relative;
-    left: 0em;
-    top: 0;
+}
+#extra ul{
+    position: absolute;
+    left: 0;
+    top: 10em;
    
   
 }
-
+#extra:hover ul{
+    display: none;
+}
 .display{
     display: none;
     opacity: 0;
@@ -129,25 +142,24 @@ align-items: center;
 width: 100%;
 padding: 0 1.5rem;
 }
-.button{
+.navbar-btn .button{
     text-decoration: none;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ff8177;
+    background-color: transparent;
     border-radius: 4px;
 }
 .button:hover{
-background-color: #4738ff;
-transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 1s;
+color: #106127;
+transform: scale(1.2);
+transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) .5s;
 }
-.x-icon{
-    color: rgb(4, 59, 111);
-    font-size: 40px;
-    font-weight:lighter;
-    display: no;
+#mobile-menu{
+    display: none;
 }
+
 @media screen and (max-width:600px) {
     .navbar-container{
 display: flex;
@@ -170,18 +182,14 @@ padding:0 ;
         position: absolute;
         top:70px;
         opacity: .9;
-        height: 50vh;
-        z-index: -1;
         display: none;
-        height:50vh;
-        transition: cubic-bezier(1, 0.79, 1, 1) 2s;
+        height:47vh;
+        transition: cubic-bezier(1, 0.79, 1, 1) ;
     }
     #nav-barlogo{
        margin-left: 1em;
     }
-    a{
-        z-index: 100;
-    }
+  
     .navbar-item:before{
         background-color: #5e8630;
         position: absolute;
@@ -199,18 +207,23 @@ padding:0 ;
     .navbar-item {
         width: 100%;
         padding: 0 30px;
+        position: relative;
+    }
+    .navbar-item:not(:nth-child(4)){
         border-bottom: 0.4px dotted #fff;
     }
- .navbar-item a:hover + ul{
+ .navbar-item:hover  .submenu{
 transform: translateX(0);
-display: block;
+display: inline-block;
+
     }
-    
-    .navbar-item a:hover{background-color: inherit;
+
+ .navbar-item a:hover{background-color: inherit;
         transition: cubic-bezier(0.755, 0.05, 0.855, 0.06) 0.2s;
         transform: scale(1.2);
 
     }
+   
     .navbar-btn{
 display: none;
         
@@ -230,23 +243,24 @@ display: none;
     .navbar-btn:hover{
         background-color: #ff8177;transition: cubic-bezier(0.755, 0.05, 0.855, 0.06) 0.2s;
     }
-    }
+    
     #mobile-menu{
         position:absolute;
       top: 20%;
       right: 3px;
       transform: translate(5%,20%);
       cursor: pointer;
+      display: block;
     }
    .sub1{
-      top: 0;
+      top: -4.3em;
    }
         
     .sub2{
-        top:7em;
+        top:-3em;
     }
     .sub3{
-        top:18em;
+        top:-1em;
     }
    .bar{
        width:25px;
@@ -255,7 +269,7 @@ display: none;
        margin: 5px auto;
     }
    .display-nav{
-       display: flex;
+       display: inline-block;
    }
    .active{
        display: block;
@@ -263,15 +277,16 @@ display: none;
 
    .navbar-item ul{
    width: 12em;
-   margin: 0;
    padding: 0;
  outline: 0;
  position: absolute;
- left: 26em;
+ left: 30vw;
  display: none;
  transform: translateX(41em);
- margin-bottom: 23em;
+ margin:0 0 23em 0;
  transition:ease-in-out 2s;
+z-index: 100;
+
    }
 
 
@@ -280,41 +295,44 @@ display: none;
     background-color:transparent;
     background-image:none;
 margin: 0;
-padding: 3em 30px;
-
+padding: 2em 30px;
+opacity: .9;
 }
 #extra li:first-child::before{
     display: none;
 }
-#extra:hover + li{
-    display: block;
-}
-.navbar-item:not(:nth-child(1)):after{
+
+.navbar-links:first-child:not(.home):after{
     content: '';
     position: absolute;
     border:solid;
     border-width:  6px;
     border-color: transparent transparent transparent #fff;
-    left:60vw;
-    margin-top: -4em;
+    left:40vw;
+  margin-left: 7em;
+  display: inline-block;
     }
-    #extra:after{
+  #extra:after{
         content: '';
         position: absolute;
         border:solid;
         border-width:  6px;
-        border-color: #fff transparent transparent transparent;
-       top: 2.9em;
+        border-color: transparent transparent transparent #fff;
+       top: 1.6em;
        margin-left: 1.7em;
-        }
-        
-    
-@media screen and (min-width:600px) {
-    #mobile-menu{
-        display: none;
     }
-    
+        
+   #extra:hover ul{
+       display: inline-block;
+       transform: translateX(0);
+       top: -4em;
+       left: 7em;
+     
+   } 
+
 }
+   
+
 
 /* Hero section */
 .main{

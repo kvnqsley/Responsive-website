@@ -28,19 +28,10 @@ sub2=document.querySelector("ul.sub2");
 
      extraUl=document.querySelector('#extra ul');
      extra=document.querySelector('.about')
-navBarLinks.forEach(element => {
-    element.addEventListener('click',()=>{
 
-        if (window.innerWidth<=600) {
-            element.nextElementSibling.style.display='block';
-            element.nextElementSibling.style.transform='translateX(0)';
-            
-        }
-      
-});
-})
 
 function displayOff(e) {
+    if (window.innerWidth<=600) {
     navBarLinks.forEach(element => {
         element.style.transform='translateX(-13em)';
         //element.previousElementSibling.style.display="none"
@@ -50,6 +41,7 @@ function displayOff(e) {
     item.forEach(element => {
        console.log();
     });
+}
 }
 function display2() {
 
