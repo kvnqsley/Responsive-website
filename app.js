@@ -6,6 +6,7 @@ var xIcon = document.getElementsByClassName('x-icon')
 var bar =document.querySelectorAll('.bar')
 ul=document.querySelector('.navbar-item .sub1')
 item=document.querySelectorAll('.navbar-item')
+const servicesH1= document.querySelector('.services h1');
 
 const close =document.createElement('button');
 mobileMenuContainer.appendChild(close);
@@ -53,6 +54,5 @@ function display2() {
 
 }
 
-console.log();
 
-
+// var scroll =s

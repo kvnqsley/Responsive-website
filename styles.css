@@ -38,6 +38,7 @@ li a:hover{
     background-color: #5e8630;
     background-image: linear-gradient(to top,hsl(95, 29%, 39%) 0%, rgba(125, 206, 43, 0.067) 100%);
 background-size: 100%;
+background-clip: text;
 -webkit-background-clip: text;
 -moz-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -501,7 +502,10 @@ font-size: 2.5rem;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color:transparent;
+
+  opacity: 1;
 }
+
 .services_container{
 display: flex;
 justify-content: center;
