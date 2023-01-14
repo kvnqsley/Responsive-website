@@ -276,6 +276,10 @@ li a:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
+  .navbar-links {
+    -webkit-transform: translateX(-13em);
+            transform: translateX(-13em);
+  }
   .navbar-btn {
     display: none;
   }
