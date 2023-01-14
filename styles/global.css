@@ -6,9 +6,10 @@
   font-family: 'Kumbh Sans',sans-serif;
 }
 
-body {
+html, body {
   margin: 0;
   padding: 0;
   outline: 0;
+  width: 100%;
 }
 /*# sourceMappingURL=global.css.map */
