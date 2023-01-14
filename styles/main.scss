@@ -4,9 +4,10 @@
 .main{
     background-color: #141414;
     position: relative;
+    height: 100vh;
 }
 .main-container{
-    height: 90vh;
+  
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -15,7 +16,10 @@
     max-width: 1300px;
     padding: 0 50px;
     width: 100%;
+    position: relative;
+    top:2.5em;
 }
+
 .main_content h1{
 font-size: 4rem;
 background-color: #106127;
@@ -107,9 +111,7 @@ overflow-x: hidden;
 .main_content h2{
     font-size: 3rem;
 }
-.main{
-    top: -5em;
-}
+
 .main_content p{
     margin-top: 1rem;
     font-size: 1.5rem;
@@ -119,13 +121,7 @@ overflow-x: hidden;
 }
 @media screen and (max-width:480px) {
    
-    .main{
-        top: -5em;
-    }
-    .main-container{
-        position: relative;
-        top:2em;
-    }
+   
     .main_content h1{
         font-size: 2rem;
         margin-top: 3rem;

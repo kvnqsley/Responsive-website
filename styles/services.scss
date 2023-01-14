@@ -6,7 +6,7 @@ url('pexels-harsch-shivam-2007647.jpg');
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    // height: 100vh;
 }
 
 .services h1{
@@ -82,28 +82,34 @@ cursor: pointer;
 }
 @media screen and (max-width:960px) {
     .services{
-        height: 3600px;
+        // height: 3600px;
     }
     .services h1{
         font-size: 2rem;
         margin-top: 12rem;
     }
+    .services_container{
+        margin: 0;
+        padding:0;
+    }
 }
 @media screen and (max-width:400px) {
     .services{
-        height: 1400px;
+        // height: 1400px;
     }
     .services h1{
         font-size: 1.2rem;
        
     }
     .services_card{
-        width: 300px;
+        width: 100%
     }
     .services_card:nth-child(2){
-        width: 100vw;
+        width: 100%;
     }
-    .services_card{
-    width: 100vw;
+   
+    .services_container{
+        margin: 0;
+        padding:0;
     }
 }

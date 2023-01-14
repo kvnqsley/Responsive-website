@@ -398,10 +398,10 @@ li a:hover {
 .main {
   background-color: #141414;
   position: relative;
+  height: 100vh;
 }
 
 .main-container {
-  height: 90vh;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -416,6 +416,8 @@ li a:hover {
   max-width: 1300px;
   padding: 0 50px;
   width: 100%;
+  position: relative;
+  top: 2.5em;
 }
 
 .main_content h1 {
@@ -523,9 +525,6 @@ li a:hover {
   .main_content h2 {
     font-size: 3rem;
   }
-  .main {
-    top: -5em;
-  }
   .main_content p {
     margin-top: 1rem;
     font-size: 1.5rem;
@@ -533,13 +532,6 @@ li a:hover {
 }
 
 @media screen and (max-width: 480px) {
-  .main {
-    top: -5em;
-  }
-  .main-container {
-    position: relative;
-    top: 2em;
-  }
   .main_content h1 {
     font-size: 2rem;
     margin-top: 3rem;
@@ -569,7 +561,6 @@ li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
 }
 
 .services h1 {
@@ -650,30 +641,29 @@ li a:hover {
 }
 
 @media screen and (max-width: 960px) {
-  .services {
-    height: 3600px;
-  }
   .services h1 {
     font-size: 2rem;
     margin-top: 12rem;
   }
+  .services_container {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 400px) {
-  .services {
-    height: 1400px;
-  }
   .services h1 {
     font-size: 1.2rem;
   }
   .services_card {
-    width: 300px;
+    width: 100%;
   }
   .services_card:nth-child(2) {
-    width: 100vw;
+    width: 100%;
   }
-  .services_card {
-    width: 100vw;
+  .services_container {
+    margin: 0;
+    padding: 0;
   }
 }
 
