@@ -36,7 +36,7 @@ sub2=document.querySelector("ul.sub2");
 function displayOff(e) {
     if (window.innerWidth<=600) {
     navBarLinks.forEach(element => {
-        element.style.transform='translateX(-13em)';
+        element.style.transform='translateX(-40%)';
         //element.previousElementSibling.style.display="none"
         
     });
