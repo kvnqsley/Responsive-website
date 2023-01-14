@@ -95,12 +95,11 @@
     margin-top: 12rem;
   }
   .services_container {
-    margin: 0;
-    padding: 0;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .services h1 {
     font-size: 1.2rem;
   }
@@ -111,8 +110,7 @@
     width: 100%;
   }
   .services_container {
-    margin: 0;
-    padding: 0;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=services.css.map */

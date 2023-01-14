@@ -89,11 +89,10 @@ cursor: pointer;
         margin-top: 12rem;
     }
     .services_container{
-        margin: 0;
-        padding:0;
+        width: 100%;
     }
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:600px) {
     .services{
         // height: 1400px;
     }
@@ -109,7 +108,6 @@ cursor: pointer;
     }
    
     .services_container{
-        margin: 0;
-        padding:0;
+     width: 100%;
     }
 }
