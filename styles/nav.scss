@@ -215,7 +215,7 @@ display: inline-block;
 
     }
    .navbar-links{
-       transform: translateX(-13em);
+       transform: translateX(-20%);
    }
     .navbar-btn{
 display: none;
@@ -232,6 +232,7 @@ display: none;
         border: none;
         transition:ease-in-out 2s;
         z-index: 100;
+        margin-top: -.2em;
     }
     .navbar-btn:hover{
         background-color: #ff8177;transition: cubic-bezier(0.755, 0.05, 0.855, 0.06) 0.2s;
