@@ -79,13 +79,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .social_icons a {
-  margin: 0;
+  margin-left: 1em;
+  color: #fff;
   font-size: 1em;
 }
 /*# sourceMappingURL=footer.css.map */

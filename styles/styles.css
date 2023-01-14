@@ -8,6 +8,8 @@
 
 body {
   margin: 0;
+  padding: 0;
+  outline: 0;
 }
 
 li a:hover {
@@ -535,7 +537,7 @@ li a:hover {
   }
   .main-container {
     position: relative;
-    top: 1em;
+    top: 2em;
   }
   .main_content h1 {
     font-size: 2rem;
@@ -656,7 +658,7 @@ li a:hover {
   }
 }
 
-@media screen and (max-width: 200px) {
+@media screen and (max-width: 400px) {
   .services {
     height: 1400px;
   }
@@ -665,6 +667,12 @@ li a:hover {
   }
   .services_card {
     width: 300px;
+  }
+  .services_card:nth-child(2) {
+    width: 100vw;
+  }
+  .services_card {
+    width: 100vw;
   }
 }
 
@@ -749,13 +757,14 @@ li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .social_icons a {
-  margin: 0;
+  margin-left: 1em;
+  color: #fff;
   font-size: 1em;
 }
 /*# sourceMappingURL=styles.css.map */

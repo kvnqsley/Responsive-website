@@ -89,7 +89,7 @@ cursor: pointer;
         margin-top: 12rem;
     }
 }
-@media screen and (max-width:200px) {
+@media screen and (max-width:400px) {
     .services{
         height: 1400px;
     }
@@ -99,5 +99,11 @@ cursor: pointer;
     }
     .services_card{
         width: 300px;
+    }
+    .services_card:nth-child(2){
+        width: 100vw;
+    }
+    .services_card{
+    width: 100vw;
     }
 }
