@@ -292,8 +292,8 @@ li a:hover {
             transform: scale(1.2);
   }
   .navbar-links {
-    -webkit-transform: translateX(-20%);
-            transform: translateX(-20%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .navbar-btn {
     display: none;
