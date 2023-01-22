@@ -1,20 +1,12 @@
 .services {
   background-color: #141414;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .services h1 {
   background-color: #ff8177;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ff8177), color-stop(0%, #ff857a), color-stop(21%, #71a744), color-stop(52%, #f99185), color-stop(38%, #cf556c), to(#44740d));
   background-image: linear-gradient(to right, #ff8177 0%, #ff857a 0%, #71a744 21%, #f99185 52%, #cf556c 38%, #44740d 100%);
   background-size: 100%;
   margin-bottom: 5rem;
@@ -27,14 +19,9 @@
 }
 
 .services_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .services_card {
@@ -42,21 +29,21 @@
   height: 525px;
   width: 400px;
   border-radius: 4px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(17, 17, 17, 0.6))), url("pexels-harsch-shivam-2007647.jpg");
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(17, 17, 17, 0.6) 100%), url("pexels-harsch-shivam-2007647.jpg");
   background-size: cover;
   position: relative;
   color: #fff;
 }
 
-.services_card:nth-child(2) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(17, 17, 17, 0.6))), url("pexels-cottonbro-4009626.jpg");
+.services_container .services_card:nth-child(1) {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(17, 17, 17, 0.6) 100%), url("pexels-harsch-shivam-2007647.jpg");
+}
+
+.services_container .services_card:nth-child(2) {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(17, 17, 17, 0.6) 100%), url("pexels-cottonbro-4009626.jpg");
-  background-clip: text;
 }
 
 .services h2 {
-  position: relative;
+  position: absolute;
   top: 350px;
   left: 30px;
 }
@@ -82,9 +69,7 @@
 }
 
 .services_card:hover {
-  -webkit-transform: scale(1.075);
-          transform: scale(1.075);
-  -webkit-transition: 0.2s ease-in;
+  transform: scale(1.075);
   transition: 0.2s ease-in;
   cursor: pointer;
 }
@@ -98,7 +83,6 @@
     width: 100%;
   }
 }
-
 @media screen and (max-width: 600px) {
   .services h1 {
     font-size: 1.2rem;
@@ -112,5 +96,4 @@
   .services_container {
     width: 100%;
   }
-}
-/*# sourceMappingURL=services.css.map */
+}/*# sourceMappingURL=services.css.map */

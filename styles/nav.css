@@ -4,30 +4,20 @@ li a:hover {
 
 .navbar {
   background-color: #131313;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 60px;
   font-size: 1rem;
   position: -webkit-sticky;
   position: sticky;
   z-index: 999;
-  top: -.6em;
+  top: -0.6em;
 }
 
 .navbar-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: 0 auto;
   height: 60px;
   width: 100%;
@@ -38,20 +28,15 @@ li a:hover {
 
 #nav-barlogo, #footer_logo {
   background-color: #5e8630;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#5f8047), to(rgba(125, 206, 43, 0.067)));
-  background-image: linear-gradient(to top, #5f8047 0%, rgba(125, 206, 43, 0.067) 100%);
+  background-image: linear-gradient(to top, hsl(95deg, 29%, 39%) 0%, rgba(125, 206, 43, 0.067) 100%);
   background-size: 100%;
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-size: 2rem;
   font-weight: bold;
   text-decoration: none;
@@ -59,12 +44,8 @@ li a:hover {
 }
 
 .navbar-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   list-style-type: none;
   text-align: center;
 }
@@ -75,13 +56,12 @@ li a:hover {
 }
 
 .navbar-links::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 0;
   background-color: #5e8630;
   top: 4em;
-  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
@@ -106,10 +86,8 @@ li a:hover {
 }
 
 .navbar-item:hover .submenu {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
   display: block;
-  -webkit-transition: all 2s;
   transition: all 2s;
 }
 
@@ -118,13 +96,13 @@ li a:hover {
 }
 
 #extra li:first-child::before {
-  content: '';
+  content: "";
   position: absolute;
   border: solid;
   border-width: 6px;
   border-color: transparent transparent transparent #fff;
   left: 0;
-  top: .8em;
+  top: 0.8em;
 }
 
 #extra {
@@ -152,15 +130,9 @@ li a:hover {
 
 .navbar-item a {
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   padding: 0 1.5rem;
   height: 100%;
@@ -168,15 +140,9 @@ li a:hover {
 
 .navbar-btn {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 0 1.5rem;
 }
@@ -184,24 +150,16 @@ li a:hover {
 .navbar-btn .button {
   text-decoration: none;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   border-radius: 4px;
 }
 
 .button:hover {
   color: #106127;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s;
+  transform: scale(1.2);
   transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s;
 }
 
@@ -211,12 +169,8 @@ li a:hover {
 
 @media screen and (max-width: 600px) {
   .navbar-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     height: 80px;
     z-index: 1;
     width: 100%;
@@ -224,22 +178,17 @@ li a:hover {
     padding: 0;
   }
   .navbar-menu {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
+    flex-direction: column;
+    grid-template-columns: auto;
     width: 100%;
     margin: 0;
     outline: 0;
     background-color: black;
     position: absolute;
     top: 70px;
-    opacity: .9;
+    opacity: 0.9;
     display: none;
     height: 47vh;
-    -webkit-transition: cubic-bezier(1, 0.79, 1, 1);
     transition: cubic-bezier(1, 0.79, 1, 1);
   }
   #nav-barlogo {
@@ -248,7 +197,7 @@ li a:hover {
   .navbar-item:before {
     background-color: #5e8630;
     position: absolute;
-    width: .2em;
+    width: 0.2em;
     left: 0;
     content: "";
     height: 4.2em;
@@ -265,20 +214,16 @@ li a:hover {
     border-bottom: 0.4px dotted #fff;
   }
   .navbar-item:hover .submenu {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
     display: inline-block;
   }
   .navbar-item a:hover {
     background-color: inherit;
-    -webkit-transition: cubic-bezier(0.755, 0.05, 0.855, 0.06) 0.2s;
     transition: cubic-bezier(0.755, 0.05, 0.855, 0.06) 0.2s;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
   .navbar-links {
-    -webkit-transform: translateX(-40%);
-            transform: translateX(-40%);
+    transform: translateX(-40%);
   }
   .navbar-btn {
     display: none;
@@ -291,22 +236,19 @@ li a:hover {
     font-size: 3em;
     cursor: pointer;
     border: none;
-    -webkit-transition: ease-in-out 2s;
     transition: ease-in-out 2s;
     z-index: 100;
-    margin-top: -.2em;
+    margin-top: -0.2em;
   }
   .navbar-btn:hover {
     background-color: #ff8177;
-    -webkit-transition: cubic-bezier(0.755, 0.05, 0.855, 0.06) 0.2s;
     transition: cubic-bezier(0.755, 0.05, 0.855, 0.06) 0.2s;
   }
   #mobile-menu {
     position: absolute;
     top: 20%;
     right: 3px;
-    -webkit-transform: translate(5%, 20%);
-            transform: translate(5%, 20%);
+    transform: translate(5%, 20%);
     cursor: pointer;
     display: block;
   }
@@ -338,10 +280,8 @@ li a:hover {
     position: absolute;
     left: 30vw;
     display: none;
-    -webkit-transform: translateX(41em);
-            transform: translateX(41em);
+    transform: translateX(41em);
     margin: 0 0 23em 0;
-    -webkit-transition: ease-in-out 2s;
     transition: ease-in-out 2s;
     z-index: 100;
   }
@@ -351,13 +291,13 @@ li a:hover {
     background-image: none;
     margin: 0;
     padding: 2em 30px;
-    opacity: .9;
+    opacity: 0.9;
   }
   #extra li:first-child::before {
     display: none;
   }
   .navbar-links:first-child:not(.home):after {
-    content: '';
+    content: "";
     position: absolute;
     border: solid;
     border-width: 6px;
@@ -367,7 +307,7 @@ li a:hover {
     display: inline-block;
   }
   #extra:after {
-    content: '';
+    content: "";
     position: absolute;
     border: solid;
     border-width: 6px;
@@ -377,10 +317,8 @@ li a:hover {
   }
   #extra:hover ul {
     display: inline-block;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
     top: -4em;
     left: 7em;
   }
-}
-/*# sourceMappingURL=nav.css.map */
+}/*# sourceMappingURL=nav.css.map */
