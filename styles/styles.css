@@ -38,6 +38,7 @@ li a:hover {
   z-index: 1;
   padding: 0 50px;
   max-width: 1300px;
+  position: relative;
 }
 
 #nav-barlogo, #footer_logo {
@@ -219,6 +220,20 @@ li a:hover {
   .inactive {
     display: none;
   }
+  .active {
+    transform: tr;
+  }
+  .bar1_active {
+    transform: rotate(45deg) translate(4px, 7px);
+    transition: all ease-in 0.5s;
+  }
+  .bar3_active {
+    transform: rotate(-45deg) translate(4px, -7px);
+    transition: all ease-in 0.5s;
+  }
+  .bar2_active {
+    transform: translateY(-400px);
+  }
   .navbar-item {
     width: 100%;
     padding: 0 30px;
@@ -243,7 +258,6 @@ li a:hover {
     display: none;
   }
   .close-btn {
-    display: none;
     margin: 0;
     background-color: transparent;
     color: #fff;
@@ -261,7 +275,7 @@ li a:hover {
   #mobile-menu {
     position: absolute;
     top: 20%;
-    right: 3px;
+    right: 6px;
     transform: translate(5%, 20%);
     cursor: pointer;
     display: block;
@@ -280,12 +294,13 @@ li a:hover {
     height: 3px;
     background-color: #fff;
     margin: 5px auto;
+    display: block;
+  }
+  .display-none {
+    display: none;
   }
   .display-nav {
     display: inline-block;
-  }
-  .active {
-    display: block;
   }
   .navbar-item ul {
     width: 12em;
@@ -610,7 +625,8 @@ li a:hover {
 }
 
 .footer_link_items > h2 {
-  color: #fff;
+  color: #5e8630;
+  width: 200px;
 }
 
 .footer_link_items a {

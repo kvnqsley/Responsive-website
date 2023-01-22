@@ -23,6 +23,7 @@ li a:hover{
        z-index: 1;
        padding: 0 50px;
        max-width: 1300px;
+       position: relative;
 }
 #nav-barlogo,#footer_logo{
     background-color: #5e8630;
@@ -195,10 +196,25 @@ padding:0 ;
         display: none;
        
     }
+    .active{
+        transform: tr;
+    }
+    .bar1_active{
+        transform: rotate(45deg) translate(4px,7px);
+        transition: all ease-in 0.5s;
+    }
+    .bar3_active{
+        transform: rotate(-45deg) translate(4px,-7px);
+        transition: all ease-in 0.5s;
+    }
+    .bar2_active{
+        transform:  translateY(-400px);
+    }
     .navbar-item {
         width: 100%;
         padding: 0 30px;
         position: relative;
+      
     }
     .navbar-item:not(:nth-child(4)){
         border-bottom: 0.4px dotted #fff;
@@ -216,6 +232,7 @@ display: inline-block;
     }
    .navbar-links{
        transform: translateX(-40%);
+       
    }
     .navbar-btn{
 display: none;
@@ -223,7 +240,7 @@ display: none;
     }
 
     .close-btn{
-     display: none;
+    // display: none;
         margin: 0;
         background-color: transparent;
         color: #fff;
@@ -241,10 +258,10 @@ display: none;
     #mobile-menu{
         position:absolute;
       top: 20%;
-      right: 3px;
+      right: 6px;
       transform: translate(5%,20%);
       cursor: pointer;
-      display: block;
+     display: block;
     }
    .sub1{
       top: -4.3em;
@@ -261,13 +278,15 @@ display: none;
        height: 3px;
        background-color: #fff;
        margin: 5px auto;
+      display: block;
+    }
+    .display-none{
+        display: none;
     }
    .display-nav{
        display: inline-block;
    }
-   .active{
-       display: block;
-   }
+   
 
    .navbar-item ul{
    width: 12em;

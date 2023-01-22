@@ -20,7 +20,7 @@
     app.cacheDom();
 app._render();
 app.bindEvent();
-app.displaynav();
+
     },
    //cacheDom
     cacheDom:()=>{
@@ -29,21 +29,24 @@ app.displaynav();
         this.navBarLinks= document.querySelectorAll('.navbar-links');
         this.mobileMenuContainer=document.getElementById('mobile-menu');
         this.xIcon= document.getElementsByClassName('x-icon')
-        this.bar =document.querySelectorAll('.bar')
+        this.bar =document.querySelectorAll('.bar');
+        this.bar1=document.getElementById('bar1');
+        this.bar2=document.getElementById('bar2');
+        this.bar3=document.getElementById('bar3');
         this.ul=document.querySelector('.navbar-item .sub1')
         this.item=document.querySelectorAll('.navbar-item')
         this.servicesH1= document.querySelector('.services h1');
     this.marquee = document.getElementById('weather');
-    this.close =document.createElement('button');
+    // this.close =document.createElement('button');
     this.sub1=document.querySelector("ul.sub1");
     this.sub2=document.querySelector("ul.sub2");
 
      this.extraUl=document.querySelector('#extra ul');
      this.extra=document.querySelector('.about')
-     this.mobileMenuContainer.appendChild(close);
-this.x =document.createTextNode('X');
-this.closeBtn=close.appendChild(x);
-this.close.setAttribute('class','close-btn')
+    //  this.mobileMenuContainer.appendChild(close);
+// this.x =document.createTextNode('X');
+// this.closeBtn=close.appendChild(x);
+// this.close.setAttribute('class','close-btn ')
     },
 
     bindEvent:()=>{
@@ -65,11 +68,14 @@ this.mobileMenu.addEventListener('click',app.displaynav.bind(this)
     displaynav:()=>{
         this.navBarMenu.classList.toggle('display-nav');
         this.navBarMenu.classList.add('transition');
-        this.bar.forEach(element => {
-            element.classList.toggle("inactive")
-            });
-            this.close.classList.toggle('active')
-    
+            // this.close.classList.toggle('inactive');
+            // this.bar.forEach(element => {
+            //     element.classList.toggle('active')
+            //     });
+          this.bar1.classList.toggle('bar1_active');
+          this.bar2.classList.toggle('bar2_active');
+          this.bar3.classList.toggle('bar3_active');
+  
     }
     
 }
